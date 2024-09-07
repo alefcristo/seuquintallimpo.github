@@ -14,6 +14,12 @@ body {
     padding: 0; /* Remove o padding padrão */
 }
 
+.descricao {
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: #000000; /* Define a cor do texto */
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do parágrafo */
+  }
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
