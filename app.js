@@ -1,48 +1,34 @@
-function pesquisarBairro () {
-    let section = document.getElementById
-    ("resultados-pesquisa");
-
-    let campoPesquisa = document.getElementById
-    ("campo-pesquisa").value
-
-    if (campoPesquisa == "") {
-    section.innerHTML = "<p>Você não digitou um bairro</p>"
-    return
+function pesquisarBairro() {
+    const campoPesquisa = document.getElementById("campo-pesquisa").value.toLowerCase();
+    const resultadosSection = document.getElementById("resultados-pesquisa");
+  
+    if (!campoPesquisa) {
+      resultadosSection.innerHTML = "<p>Você não digitou um bairro</p>";
+      return;
     }
-    
-campoPesquisa = campoPesquisa.toLowerCase ()
-
-    let resultados = "";
-    let titulo = "";
-    let descricao = "";
-    let tags = "";
-    
-    for (let dado of dados) {
-        titulo = dado.titulo.toLowerCase()
-        descricao = dado.descricao.toLowerCase()
-        tags = dado.tags.toLowerCase()
-
-     if  (titulo.includes(campoPesquisa) || descricao.
-     includes(campoPesquisa) || tags.includes
-    (campoPesquisa))
-        {resultados += `
-        <div class="item-resultado">
-        <h2> 
-        ${dado.titulo}
-            </h2>
-        <P class="descricao-meta"> ${dado.descricao} </P>
-        <a href=${dado.link} target="_blank">Agende um serviço</a>
-      </div>
-      `
-     }
-        
-     if (!resultados) {
-        resultados = "<p>Seu bairro ainda não possui capinadores cadastrados</p>"
+  
+    const resultados = dados.filter(dado => {
+      const { titulo, descricao, tags } = dado;
+      return titulo.toLowerCase().includes(campoPesquisa) ||
+             descricao.toLowerCase().includes(campoPesquisa) ||
+             tags.toLowerCase().includes(campoPesquisa);
+    });
+  
+    let htmlResultados = "";
+  
+    if (resultados.length > 0) {
+      resultados.forEach(dado => {
+        htmlResultados += `
+          <div class="item-resultado">
+            <h2>${dado.titulo}</h2>
+            <p class="descricao-meta">${dado.descricao}</p>
+            <a href="${dado.link}" target="_blank">Agende um serviço</a>
+          </div>
+        `;
+      });
+    } else {
+      htmlResultados = "<p>Seu bairro ainda não possui capinadores cadastrados</p>";
     }
-
-    }
-    
-    section.innerHTML = resultados
-    
-}
-
+  
+    resultadosSection.innerHTML = htmlResultados;
+  }
