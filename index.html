@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">   
+  <title>Quintal Limpo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Seu Quintal Limpo</h1>
-  <div class="descricao">
-    <p>Somos uma startup de impacto social e conectamos você a profissionais capinadores, garantindo que eles sejam bem remunerados.</p>
-  </div>
-<body>
   <header>
-  </header>  
+    <div class="logo-container">
+        <img src="https://i.pinimg.com/564x/39/c1/e8/39c1e87aa6d803c9bf16226e4d027298.jpg" alt="Logo Quintal Limpo" class="logo-arredondada">  
+        <h1>Quintal Limpo</h1>
+    </div>
+  </header>
   <main>
-    <section>
-    <input type="text" placeholder="Digite o nome do seu bairro" id="campo-pesquisa">
-    <button type="button" onclick="pesquisarBairro()">Encontrar meu capinador(a) master</button>
-</section> 
-<section class="resultados-pesquisa" 
-id="resultados-pesquisa">
-</section>
+    <p class="texto-principal">Somos uma startup de impacto social e conectamos você a profissionais capinadores, garantindo que eles sejam bem remunerados.</p>
+    <input type="text" id="campo-pesquisa" placeholder="Digite o nome do seu bairro">
+    <button onclick="pesquisarBairro()">Encontrar meu capinador(a)</button>
   </main>
+  <div class="minha-classe" id="resultados-pesquisa"></div>
   <footer>
-    <p> 2024 - Seu Quintal Limpo - Todos os direitos reservados</p>
-    <p> Entre em contato pelo email: seuquintallimpo@gmail.com</p>
+    <p>2023 - Seu Quintal Limpo - Todos os direitos reservados</p>
+    <p> Entre em contato pelo email: contato.alefcristo@gmail.com</p>
   </footer>
-  <script src="dados.js"></script>
-  <script src="app.js"></script>
 </body>
+<script src="dados.js"></script>
+<script src="app.js"></script>
 </html>
