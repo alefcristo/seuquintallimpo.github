@@ -10,7 +10,7 @@ function pesquisarBairro() {
 
   // Filtra os resultados comparando apenas o título com o bairro pesquisado
   const resultados = dados.filter(dado => {
-    const { titulo } = dado; // Assume que "titulo" seja o nome do bairro
+  return dado.bairro.toLowerCase() === campoPesquisa;
     return titulo.toLowerCase() === campoPesquisa; // Verificação de igualdade estrita
   });
 
