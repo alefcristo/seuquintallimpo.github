@@ -288,7 +288,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; /* Garante que o corpo tenha no mínimo 100% da altura da viewport */
   display: flex;
-  flex-direction: column; /* Para garantir que o rodapé fique no final */
+  flex-direction: fixed; /* Para garantir que o rodapé fique no final */
 }
 
 main {
