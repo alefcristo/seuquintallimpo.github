@@ -399,3 +399,22 @@ a:hover {
   overflow: hidden;
   margin: 10px auto;
 }
+
+.resultados-pesquisa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Outros estilos */
+}
+
+.item-resultado {
+  width: 300px; /* Ajuste a largura conforme necessário */
+  margin: 10px;
+  /* Outros estilos */
+}
+
+.aviso-sem-capinadores {
+  text-align: center;
+  margin: 20px auto;
+  /* Outros estilos */
+}
