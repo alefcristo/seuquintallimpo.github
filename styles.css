@@ -239,9 +239,12 @@ body {
 
 /* Estilos para telas menores que 768px (típico para mobile) */
 @media (max-width: 768px) {
-  body {
-    background-size: contain; /* Ajusta o background para caber melhor */
-    height: auto; /* Para permitir o scroll se o conteúdo for maior */
+    .item-resultado {
+        width: 100%;
+    }
+
+    .resultados-pesquisa {
+        flex-wrap: wrap;
   }
 
   h1 {
