@@ -1,22 +1,19 @@
 function pesquisarBairro() {
+  console.log('Função pesquisarBairro chamada'); // Para verificar se a função está sendo executada no mobile
   const campoPesquisa = document.getElementById("campo-pesquisa").value.toLowerCase();
   const resultadosSection = document.getElementById("resultados-pesquisa");
 
-  // Verificação para garantir que o usuário digitou algo
   if (!campoPesquisa) {
     resultadosSection.innerHTML = "<p class='aviso-erro'>Você não digitou um bairro</p>";
     return;
   }
 
-  // Filtra os resultados comparando apenas o título com o bairro pesquisado
   const resultados = dados.filter(dado => {
-  return dado.bairro.toLowerCase() === campoPesquisa;
-    return titulo.toLowerCase() === campoPesquisa; // Verificação de igualdade estrita
+    return dado.bairro.toLowerCase() === campoPesquisa;
   });
 
   let htmlResultados = "";
 
-  // Se encontrar capinadores cadastrados no bairro
   if (resultados.length > 0) {
     resultados.forEach(dado => {
       htmlResultados += `
@@ -29,10 +26,9 @@ function pesquisarBairro() {
       `;
     });
   } else {
-    // Se não houver capinadores cadastrados no bairro
     htmlResultados = "<p class='aviso-sem-capinadores'>Bairro sem capinadores cadastrados</p>";
   }
 
-  // Exibe os resultados
   resultadosSection.innerHTML = htmlResultados;
+  console.log('Resultados atualizados no mobile:', htmlResultados); // Log para verificar o resultado
 }
