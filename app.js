@@ -5,26 +5,31 @@ function pesquisarBairro() {
   if (!campoPesquisa) {
     resultadosSection.innerHTML = "<p class='aviso-erro'>Você não digitou um bairro</p>";
     return;
-  }
+}
+
 
   const resultados = dados.filter(dado => {
-    const { titulo, descricao, tags } = dado;
-    // Adaptar a lógica de busca conforme a estrutura dos seus dados
-    return titulo.toLowerCase().includes(campoPesquisa) ||
-           descricao.toLowerCase().includes(campoPesquisa) ||
-           tags.toLowerCase().some(tag => tag.includes(campoPesquisa)); // Se tags for um array
+      const { titulo, descricao, tags } = dado;
+      return titulo.toLowerCase().includes(campoPesquisa) ||
+             descricao.toLowerCase().includes(campoPesquisa) ||
+             tags.toLowerCase().includes(campoPesquisa);
   });
 
   let htmlResultados = "";
 
-  if (resultados.length === 0) {
-    htmlResultados = "<p class='aviso-sem-capinadores'>Bairro sem capinadores cadastrados</p>";
-  } else {
-    // ... restante do código para exibir os resultados
-    resultados.forEach(dado => {
-      // ...
-    });
-  }
-
-  resultadosSection.innerHTML = htmlResultados;
+  if (resultados.length > 0) {
+      resultados.forEach(dado => {
+          htmlResultados += `
+              <div class="item-resultado">
+                  <img src="${dado.imagem}" alt="${dado.titulo}">
+                  <h2>${dado.titulo}</h2>
+                  <p class="descricao-meta">${dado.descricao}</p>
+                  <a href="${dado.link}" target="_blank">Agende um serviço</a>
+              </div>
+          `;
+      });
+    } else {
+      htmlResultados = "<p class='aviso-sem-capinadores'>Bairro sem capinadores cadastrados</p>";
+    };
+    resultadosSection.innerHTML = htmlResultados;
 }
