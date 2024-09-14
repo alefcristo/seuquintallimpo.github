@@ -29,7 +29,7 @@ function pesquisarBairro() {
           `;
       });
     } else {
-      htmlResultados = "<p class='aviso-sem-capinadores'>Seu bairro ainda não possui capinadores cadastrados</p>";
+      htmlResultados = "<p class='aviso-sem-capinadores'>Bairro sem capinadores cadastrados</p>";
     };
     resultadosSection.innerHTML = htmlResultados;
 }
