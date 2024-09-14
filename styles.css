@@ -305,3 +305,49 @@ footer {
   bottom: 0;
   z-index: 1;
 }
+
+/* styles.css */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 0;
+    background-image: url('https://i.pinimg.com/736x/83/62/49/8362499b1b7e38b8d24828d7998b8ee2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    min-height: 100vh; /* Garante que a página ocupe 100% da altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço disponível */
+}
+
+footer {
+    background-color: #002855;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Permite que o rodapé fique no final sem sobrepor o conteúdo */
+    bottom: 0;
+}
+
+#resultados-pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 0; /* Remove qualquer margem superior que possa estar gerando o espaço */
+}
+
+.item-resultado {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
