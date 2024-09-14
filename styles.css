@@ -16,7 +16,7 @@ body {
 
   .minha-classe {
     background-color:;
-    height: 1200px;
+    height: 500px;
   }
 
 /* styles.css */
@@ -136,6 +136,16 @@ header {
     padding: 20px;
   }
   
+  .item-resultado {
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+  }
+  
   h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -211,14 +221,6 @@ button {
     margin-top: 0; /* Remove qualquer margem superior que possa estar gerando o espaço */
 }
 
-.item-resultado {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
 }
 
 /* Estilo do body */
@@ -296,40 +298,43 @@ footer {
   z-index: 1;
 }
 
-/* styles.css */
-body {
-    font-family: 'Baloo 2', sans-serif;
-    margin: 0;
-    background-image: url('https://i.pinimg.com/736x/83/62/49/8362499b1b7e38b8d24828d7998b8ee2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #cccccc;
-    min-height: 100vh; /* Garante que a página ocupe 100% da altura da viewport */
-    display: flex;
-    flex-direction: column;
+.item-resultado {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main {
-    flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço disponível */
+.item-resultado img {
+  width: 100px; /* Defina o tamanho desejado da imagem */
+  height: 100px;
+  border-radius: 50%; /* Torna a imagem redonda */
+  margin-bottom: 10px; /* Espaço entre a imagem e o nome */
 }
 
-footer {
-    background-color: #002855;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: relative; /* Permite que o rodapé fique no final sem sobrepor o conteúdo */
-    bottom: 0;
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-#resultados-pesquisa {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-top: 0; /* Remove qualquer margem superior que possa estar gerando o espaço */
+.descricao-meta {
+  font-size: 1em;
+  color: #666;
+}
+
+
+.minha-classe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .item-resultado {
@@ -361,5 +366,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-
