@@ -1,37 +1,381 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Quintal Limpo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag responsiva -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="logo-container">
-        <img src="https://i.pinimg.com/564x/39/c1/e8/39c1e87aa6d803c9bf16226e4d027298.jpg" alt="Logo Quintal Limpo" class="logo-arredondada">  
-        <h1>Quintal Limpo</h1>
-    </div>
-  </header>
-  <main>
-    <p class="texto-principal">Somos uma startup de impacto social e conectamos você a profissionais capinadores, garantindo que eles sejam bem remunerados.</p>
-    <input type="text" id="campo-pesquisa" placeholder="Digite o nome do seu bairro">
-    <button onclick="pesquisarBairro()">Encontrar meu capinador(a)</button>
-  </main>
-  <!-- Seção de resultados da pesquisa -->
-  <div class="minha-classe" id="resultados-pesquisa">
-  </div>
-  <div id="resultados-pesquisa">
-    <p class="aviso-erro">Você não digitou um bairro</p>
-  </div>
+/* styles.css */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 100;
+  }
+
+  .logo-arredondada {
+    border-radius: 100%;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .minha-classe {
+    background-color:;
+    height: 500px;
+  }
+
+/* styles.css */
+.texto-principal {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.5);
+  }
+
+  .minha-classe {
+    /* Estilos para a seção de resultados */
+    margin-top: 40px;
+    padding: 40px;
+    border: 0 solid #0fb612;
+}
+
+header {
+    background-color: #002855; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    background-color: #32e038; /* Verde */
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+input, button {
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+    margin: 25px;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    background-color: #002855;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 100px;
+}
+
+
+header {
+    background-color: #0b0446; /* Cor de fundo do cabeçalho */
+    text-align: center; /* Centraliza o conteúdo dentro do header */
+  }
   
-  <footer>
-    <p>2023 - Seu Quintal Limpo - Todos os direitos reservados</p>
-    <p>Entre em contato pelo email: seuquintallimp@gmail.com</p>
-  </footer>
-  <script src="dados.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+  header {
+    background-color: #1f0344; /* Cor de fundo do cabeçalho */
+    text-align: center; /* Centraliza o conteúdo dentro do header */
+  }
+  
+  .logo-container {
+    text-align: CENTER;
+    margin: 0 auto;
+  }
+  
+  .logo-container img {
+    width: 50px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Adiciona um espaçamento entre a logo e o texto */
+  }
+
+.fa-broom {
+    font-size: 30px;
+    margin-right: 10px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço disponível */
+}
+
+footer {
+    background-color: #002855;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Deixa o rodapé no fluxo normal */
+    bottom: 0;
+}
+
+}
+
+header {
+    text-align: left;
+    /* ... outros estilos */
+}
+
+.fa-broom {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+#resultados-pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .item-resultado {
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .descricao-meta {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #333;
+
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Exemplo de como remover margens e paddings */
+.search-bar {
+    margin: 10px;
+    padding: 10px;
+}
+
+.results {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Input e botão */
+input, button {
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+input {
+    width: 300px;
+}
+
+button {
+    background-color: #002855;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Resultados da pesquisa */
+#resultados-pesquisa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 0; /* Remove qualquer margem superior que possa estar gerando o espaço */
+}
+
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    margin: 0;
+}
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+  margin: 0;
+  background-image: url('https://i.pinimg.com/736x/83/62/49/8362499b1b7e38b8d24828d7998b8ee2.jpg'); /* URL direta da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Ajustei para no-repeat, caso você não queira que a imagem se repita */
+  background-color: #cccccc; /* Cor de fundo */
+  height: 100vh; /* Alterei para 100vh para ocupar a tela inteira */
+}
+
+/* Estilos para telas menores que 768px (típico para mobile) */
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Ajusta o background para caber melhor */
+    height: auto; /* Para permitir o scroll se o conteúdo for maior */
+  }
+
+  h1 {
+    font-size: 24px; /* Títulos menores */
+  }
+
+  .logo-container img {
+    width: 80px; /* Imagem menor */
+  }
+
+  .texto-principal {
+    font-size: 16px; /* Texto principal menor */
+    padding: 10px; /* Mais espaçamento ao redor */
+  }
+
+  input, button {
+    width: 90%; /* O input e o botão ocupam quase toda a largura da tela */
+    padding: 15px; /* Ajusta o padding para telas menores */
+    margin: 10px auto; /* Centraliza o input e o botão */
+  }
+
+  footer {
+    font-size: 12px; /* Tamanho de texto menor no rodapé */
+  }
+}
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+  margin: 0;
+  background-image: url('https://i.pinimg.com/736x/83/62/49/8362499b1b7e38b8d24828d7998b8ee2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Garante que o corpo tenha no mínimo 100% da altura da viewport */
+  display: flex;
+  flex-direction: fixed; /* Para garantir que o rodapé fique no final */
+}
+
+main {
+  flex: 1; /* Isso garante que o main cresça e ocupe o espaço disponível */
+}
+
+footer {
+  background-color: #002855;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed; /* Pode ser mudado para 'fixed' se quiser fixar no final */
+  bottom: 0;
+  z-index: 1;
+}
+
+.item-resultado {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-resultado img {
+  width: 100px; /* Defina o tamanho desejado da imagem */
+  height: 100px;
+  border-radius: 50%; /* Torna a imagem redonda */
+  margin-bottom: 10px; /* Espaço entre a imagem e o nome */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.descricao-meta {
+  font-size: 1em;
+  color: #666;
+}
+
+
+.minha-classe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.item-resultado {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.item-resultado h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.descricao-meta {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.aviso-erro {
+  font-family: 'Baloo 2', sans-serif; /* Fonte Baloo */
+  background-color: #002855; /* Fundo azul escuro */
+  color: white; /* Letra branca */
+  font-weight: bold; /* Negrito */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  text-align: center; /* Centraliza o texto */
+  display: inline-block; /* Limita o fundo ao tamanho do texto */
+  margin: 10px auto; /* Centraliza o bloco */
+}
+
