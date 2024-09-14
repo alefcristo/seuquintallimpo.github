@@ -301,7 +301,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
-  position: relative; /* Pode ser mudado para 'fixed' se quiser fixar no final */
+  position: fixed; /* Pode ser mudado para 'fixed' se quiser fixar no final */
   bottom: 0;
   z-index: 1;
 }
