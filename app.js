@@ -3,9 +3,10 @@ function pesquisarBairro() {
   const resultadosSection = document.getElementById("resultados-pesquisa");
 
   if (!campoPesquisa) {
-      resultadosSection.innerHTML = "<p>Você não digitou um bairro</p>";
-      return;
-  }
+    resultadosSection.innerHTML = "<p class='aviso-erro'>Você não digitou um bairro</p>";
+    return;
+}
+
 
   const resultados = dados.filter(dado => {
       const { titulo, descricao, tags } = dado;
