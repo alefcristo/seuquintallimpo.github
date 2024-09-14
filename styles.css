@@ -328,8 +328,12 @@ h2 {
 
 
 .minha-classe {
+  /* Estilos para a seção de resultados */
+  margin-top: 40px;
+  padding: 40px;
+  border: 0 solid #0fb612;
   display: flex;
-  flex-wrap: wrap;
+  /* Remova a propriedade flex-wrap */
   justify-content: space-around;
   padding: 20px;
 }
