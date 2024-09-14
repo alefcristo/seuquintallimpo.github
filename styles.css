@@ -1,4 +1,6 @@
 /* styles.css */
+
+/* Estilos gerais para o body */
 body {
   font-family: 'Baloo 2', sans-serif;
   margin: 0;
@@ -11,6 +13,7 @@ body {
   flex-direction: column;
 }
 
+/* Estilos para header */
 header {
   background-color: #002855;
   color: #fff;
@@ -18,10 +21,16 @@ header {
   padding: 25px;
 }
 
+/* Estilos para o main */
 main {
   flex: 1;
+  background-color: #32e038; /* Verde */
+  color: #fff;
+  text-align: center;
+  padding: 25px;
 }
 
+/* Estilos globais para inputs e botões */
 input, button {
   padding: 20px;
   border: none;
@@ -39,6 +48,7 @@ button {
   cursor: pointer;
 }
 
+/* Estilo para logos */
 .logo-arredondada {
   border-radius: 100%;
 }
@@ -47,8 +57,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
+.logo-container img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Texto principal */
 .texto-principal {
   font-family: 'Baloo 2', sans-serif;
   font-size: 20px;
@@ -57,22 +76,13 @@ button {
   text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.5);
 }
 
-footer {
-  background-color: #002855;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-}
-
+/* Estilo para ícones */
 .fa-broom {
   font-size: 30px;
   margin-right: 10px;
 }
 
+/* Estilo para resultados de pesquisa */
 #resultados-pesquisa {
   display: flex;
   justify-content: space-around;
@@ -122,6 +132,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Estilo para avisos */
 .container-aviso {
   display: flex;
   align-items: center;
@@ -141,7 +152,19 @@ a:hover {
   margin: 10px auto;
 }
 
-/* Estilos para telas menores que 768px */
+/* Estilos para o rodapé */
+footer {
+  background-color: #002855;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
   .item-resultado {
     width: 100%;
