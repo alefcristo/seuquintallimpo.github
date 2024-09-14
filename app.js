@@ -1,5 +1,4 @@
 function pesquisarBairro() {
-  console.log('Função pesquisarBairro chamada'); // Para verificar se a função está sendo executada no mobile
   const campoPesquisa = document.getElementById("campo-pesquisa").value.toLowerCase();
   const resultadosSection = document.getElementById("resultados-pesquisa");
 
@@ -9,12 +8,19 @@ function pesquisarBairro() {
   }
 
   const resultados = dados.filter(dado => {
-    return dado.bairro.toLowerCase() === campoPesquisa;
+    const { titulo, descricao, tags } = dado;
+    return titulo.toLowerCase().includes(campoPesquisa) ||
+           descricao.toLowerCase().includes(campoPesquisa) ||
+           tags.toLowerCase().includes(campoPesquisa);
   });
+
+  console.log('Resultados da pesquisa:', resultados); // Adicionando log para verificar os dados
 
   let htmlResultados = "";
 
-  if (resultados.length > 0) {
+  if (resultados.length === 0) {
+    htmlResultados = "<p class='aviso-sem-capinadores'>Bairro sem capinadores cadastrados</p>";
+  } else {
     resultados.forEach(dado => {
       htmlResultados += `
         <div class="item-resultado">
@@ -25,10 +31,8 @@ function pesquisarBairro() {
         </div>
       `;
     });
-  } else {
-    htmlResultados = "<p class='aviso-sem-capinadores'>Bairro sem capinadores cadastrados</p>";
   }
 
   resultadosSection.innerHTML = htmlResultados;
-  console.log('Resultados atualizados no mobile:', htmlResultados); // Log para verificar o resultado
+  console.log('HTML gerado:', htmlResultados); // Adicionando log para verificar o HTML
 }
