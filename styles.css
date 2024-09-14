@@ -15,7 +15,6 @@ body {
   }
 
   .minha-classe {
-    background-color:;
     height: 500px;
   }
 
@@ -117,7 +116,6 @@ footer {
     bottom: 0;
 }
 
-}
 
 header {
     text-align: left;
@@ -221,7 +219,6 @@ button {
     margin-top: 0; /* Remove qualquer margem superior que possa estar gerando o espaço */
 }
 
-}
 
 /* Estilo do body */
 body {
@@ -367,15 +364,34 @@ a:hover {
   text-decoration: underline;
 }
 
-.aviso-erro {
-  font-family: 'Baloo 2', sans-serif; /* Fonte Baloo */
-  background-color: #002855; /* Fundo azul escuro */
-  color: white; /* Letra branca */
-  font-weight: bold; /* Negrito */
-  padding: 10px 20px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  text-align: center; /* Centraliza o texto */
-  display: inline-block; /* Limita o fundo ao tamanho do texto */
-  margin: 10px auto; /* Centraliza o bloco */
+.container-aviso {
+  display: flex;
+  align-items: center;
 }
 
+.aviso-erro {
+  font-family: 'Baloo 2', sans-serif;
+  background-color: #002855;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-height: 3rem;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.aviso-sem-capinadores {
+  /* Reutilize o CSS da classe aviso-erro com as devidas adaptações */
+  font-family: 'Baloo 2', sans-serif;
+  background-color: #002855;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-height: 3rem;
+  overflow: hidden;
+  margin: 10px auto;
+}
