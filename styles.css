@@ -1,11 +1,11 @@
 /* styles.css */
 body {
     font-family: 'Baloo 2', sans-serif;
-    margin: 0;
+    margin: 100;
   }
 
   .logo-arredondada {
-    border-radius: 90%;
+    border-radius: 100%;
   }
 
   .logo-container {
@@ -15,14 +15,14 @@ body {
   }
 
   .minha-classe {
-    background-color: #32e035;
+    background-color:;
     height: 500px;
   }
 
 /* styles.css */
 .texto-principal {
     font-family: 'Baloo 2', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.5);
@@ -30,34 +30,34 @@ body {
 
   .minha-classe {
     /* Estilos para a seção de resultados */
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+    margin-top: 40px;
+    padding: 40px;
+    border: 0 solid #0fb612;
 }
 
 header {
     background-color: #002855; /* Azul escuro */
     color: #fff;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
 }
 
 main {
     background-color: #32e038; /* Verde */
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 input, button {
     padding: 20px;
     border: none;
     border-radius: 100px;
-    margin: 5px;
+    margin: 25px;
 }
 
 input {
-    width: 300px;
+    width: 50px;
 }
 
 button {
@@ -68,7 +68,7 @@ button {
 
 body {
     font-family: 'Baloo 2', sans-serif;
-    margin: 0;
+    margin: 100px;
 }
 
 
@@ -138,23 +138,24 @@ header {
   
   .item-resultado {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    width: 300px;
+    width: 100px;
     text-align: center;
   }
   
   h2 {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   .descricao-meta {
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #333;
+
   }
   
   a {
@@ -170,8 +171,8 @@ header {
 
   /* Exemplo de como remover margens e paddings */
 .search-bar {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .results {
@@ -192,20 +193,13 @@ header {
     box-sizing: border-box;
 }
 
-/* Barra de busca */
-.search-bar {
-    margin: 0 auto; /* Centraliza a barra de busca */
-    padding: 0;
-    text-align: center;
-    margin-bottom: 0; /* Garante que não tenha margem embaixo */
-}
 
 /* Input e botão */
 input, button {
     padding: 20px;
     border: none;
-    border-radius: 100px;
-    margin: 5px;
+    border-radius: 50px;
+    margin: 20px;
 }
 
 input {
@@ -243,7 +237,44 @@ body {
     margin: 0;
 }
 
-    footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
-    }
+body {
+  font-family: 'Baloo 2', sans-serif;
+  margin: 0;
+  background-image: url('https://i.pinimg.com/736x/83/62/49/8362499b1b7e38b8d24828d7998b8ee2.jpg'); /* URL direta da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Ajustei para no-repeat, caso você não queira que a imagem se repita */
+  background-color: #cccccc; /* Cor de fundo */
+  height: 100vh; /* Alterei para 100vh para ocupar a tela inteira */
+}
+
+/* Estilos para telas menores que 768px (típico para mobile) */
+@media (max-width: 768px) {
+  body {
+    background-size: contain; /* Ajusta o background para caber melhor */
+    height: auto; /* Para permitir o scroll se o conteúdo for maior */
+  }
+
+  h1 {
+    font-size: 24px; /* Títulos menores */
+  }
+
+  .logo-container img {
+    width: 80px; /* Imagem menor */
+  }
+
+  .texto-principal {
+    font-size: 16px; /* Texto principal menor */
+    padding: 10px; /* Mais espaçamento ao redor */
+  }
+
+  input, button {
+    width: 90%; /* O input e o botão ocupam quase toda a largura da tela */
+    padding: 15px; /* Ajusta o padding para telas menores */
+    margin: 10px auto; /* Centraliza o input e o botão */
+  }
+
+  footer {
+    font-size: 12px; /* Tamanho de texto menor no rodapé */
+  }
 }
