@@ -278,3 +278,30 @@ body {
     font-size: 12px; /* Tamanho de texto menor no rodapé */
   }
 }
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+  margin: 0;
+  background-image: url('https://i.pinimg.com/736x/83/62/49/8362499b1b7e38b8d24828d7998b8ee2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Garante que o corpo tenha no mínimo 100% da altura da viewport */
+  display: flex;
+  flex-direction: column; /* Para garantir que o rodapé fique no final */
+}
+
+main {
+  flex: 1; /* Isso garante que o main cresça e ocupe o espaço disponível */
+}
+
+footer {
+  background-color: #002855;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: relative; /* Pode ser mudado para 'fixed' se quiser fixar no final */
+  bottom: 0;
+  z-index: 1;
+}
