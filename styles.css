@@ -179,6 +179,59 @@ footer {
   z-index: 1;
 }
 
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .container-pesquisa {
+    flex-direction: column; /* Coloca input e botão um abaixo do outro */
+    width: 100%; /* Faz a pesquisa ocupar a largura total */
+    padding: 0 20px; /* Adiciona um padding lateral para evitar que toque as bordas */
+  }
+
+  .container-pesquisa input, .container-pesquisa button {
+    width: 100%; /* Input e botão ocupam 100% da largura no mobile */
+    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
+  }
+
+  /* Ajusta o tamanho da fonte do texto principal */
+  .texto-principal {
+    font-size: 18px;
+  }
+
+  /* Ajusta o espaçamento nas áreas de resultado */
+  #resultados-pesquisa {
+    padding: 20px; /* Reduz o padding */
+    margin-top: 10px;
+    flex-direction: column; /* Coloca os resultados em coluna no mobile */
+    align-items: center;
+  }
+
+  /* Ajusta o tamanho dos itens de resultado */
+  .item-resultado {
+    width: 90%; /* Ajusta a largura para 90% da tela no mobile */
+    margin: 10px 0; /* Ajusta o espaçamento entre os itens */
+  }
+
+  /* Ajusta a imagem e o conteúdo */
+  .item-resultado img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .descricao-meta {
+    font-size: 0.9em;
+  }
+
+  /* Ajustes no footer */
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
+
 /* Estilos para telas maiores que 768px (típico para desktop) */
 @media (min-width: 768px) {
   .container-verde {
