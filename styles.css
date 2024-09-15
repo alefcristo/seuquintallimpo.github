@@ -1,4 +1,19 @@
-/* styles.css */
+/* Coloca a barra de pesquisa e o botão lado a lado */
+.container-pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.container-pesquisa input {
+  width: 350px; /* Ajuste a largura do input conforme necessário */
+  margin-right: 10px; /* Diminui o espaçamento entre o input e o botão */
+}
+
+.container-pesquisa button {
+  width: 250px;
+}
 
 /* Estilos gerais para o body */
 body {
@@ -34,12 +49,8 @@ main {
 input, button {
   padding: 20px;
   border: none;
-  border-radius: 50px;
-  margin: 20px;
-}
-
-input {
-  width: 300px;
+  border-radius: 100px;
+  margin: 100px;
 }
 
 button {
@@ -62,7 +73,7 @@ button {
 }
 
 .logo-container img {
-  width: 50px;
+  width: 10px;
   height: auto;
   margin-right: 10px;
 }
@@ -87,28 +98,30 @@ button {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 100px;
   margin-top: 0;
 }
 
 .item-resultado {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
   margin: 15px;
   padding: 20px;
   text-align: center;
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Ajuste para a imagem redonda dos capinadores */
 .item-resultado img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  margin-bottom: 20px;
+  object-fit: cover; /* Ajusta o conteúdo da imagem dentro do círculo */
 }
 
 h2 {
@@ -120,12 +133,14 @@ h2 {
 .descricao-meta {
   font-size: 1em;
   color: #666;
+  margin: 0 10px; /* Ajuste do espaçamento lateral do texto */
 }
 
 a {
   color: #007BFF;
   text-decoration: none;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 a:hover {
@@ -149,7 +164,7 @@ a:hover {
   text-align: center;
   max-height: 3rem;
   overflow: hidden;
-  margin: 10px auto;
+  margin: 100px auto;
 }
 
 /* Estilos para o rodapé */
@@ -164,8 +179,17 @@ footer {
   z-index: 1;
 }
 
-/* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
+/* Estilos para telas maiores que 768px (típico para desktop) */
+@media (min-width: 768px) {
+  .container-verde {
+    padding: 20px 0; /* Reduz o padding superior e inferior */
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+  }
+
+  .container-verde input, .container-verde button {
+    margin: 2px; /* Reduz o espaçamento dos elementos input e button */
+  }
+
   .item-resultado {
     width: 100%;
   }
