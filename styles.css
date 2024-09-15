@@ -188,7 +188,7 @@ footer {
   }
 
   .container-pesquisa input, .container-pesquisa button {
-    width: 100%; /* Input e botão ocupam 100% da largura no mobile */
+    width: 80%; /* Input e botão ocupam 100% da largura no mobile */
     margin: 10px 0; /* Adiciona espaçamento entre os elementos */
   }
 
