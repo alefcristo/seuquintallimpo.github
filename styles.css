@@ -277,7 +277,7 @@ footer {
   }
 
   .logo-container img {
-    width: 100px; /* Tamanho maior da logo em telas maiores */
+    width: 50px; /* Tamanho maior da logo em telas maiores */
   }
 
   .texto-principal {
