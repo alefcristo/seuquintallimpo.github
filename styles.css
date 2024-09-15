@@ -216,7 +216,7 @@ footer {
 
   /* Ajusta o tamanho dos itens de resultado */
   .item-resultado {
-    width: 100%; /* Ajusta a largura para 90% da tela no mobile */
+    width: 90%; /* Ajusta a largura para 90% da tela no mobile */
     margin: 10px 0; /* Ajusta o espaçamento entre os itens */
   }
 
