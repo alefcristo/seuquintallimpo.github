@@ -7,12 +7,12 @@
 }
 
 .container-pesquisa input {
-  width: 350px; /* Ajuste a largura do input conforme necessário */
+  width: 300px; /* Ajuste a largura do input conforme necessário */
   margin-right: 10px; /* Diminui o espaçamento entre o input e o botão */
 }
 
 .container-pesquisa button {
-  width: 250px;
+  width: 200px;
 }
 
 /* Estilos gerais para o body */
