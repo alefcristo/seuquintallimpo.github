@@ -43,6 +43,7 @@ main {
   color: #fff;
   text-align: center;
   padding: 25px;
+  padding-bottom: 60px; /* Espaço suficiente para o rodapé */
 }
 
 /* Estilos globais para inputs e botões */
@@ -174,7 +175,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
-  position: fixed;
+  position: relative; /* Deixe o rodapé no fluxo normal da página */
   bottom: 0;
   z-index: 1;
 }
@@ -229,6 +230,10 @@ footer {
   footer {
     font-size: 12px;
     padding: 15px;
+  }
+
+  main {
+    padding-bottom: 80px; /* Aumentar o espaço para o rodapé em telas pequenas */
   }
 }
 
