@@ -74,10 +74,16 @@ button {
 }
 
 .logo-container img {
-  width: 10px;
+  width: 150px; /* Aumente o tamanho para desktop */
   height: auto;
   margin-right: 10px;
 }
+
+/* Tamanho da logo para dispositivos móveis */
+@media (max-width: 768px) {
+  .logo-container img {
+    width: 80px; /* Diminui o tamanho da logo para mobile */
+    height: auto;
 
 /* Texto principal */
 .texto-principal {
