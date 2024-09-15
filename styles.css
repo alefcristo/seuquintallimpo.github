@@ -73,17 +73,19 @@ button {
   margin: 0 auto;
 }
 
+/* Ajuste no tamanho da logo */
 .logo-container img {
-  width: 150px; /* Aumente o tamanho para desktop */
+  width: 100px; /* Tamanho padrão da logo */
   height: auto;
   margin-right: 10px;
 }
 
-/* Tamanho da logo para dispositivos móveis */
+/* Ajuste para a logo em telas menores */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 80px; /* Diminui o tamanho da logo para mobile */
-    height: auto;
+    width: 80px; /* Reduz o tamanho da logo para telas menores */
+  }
+}
 
 /* Texto principal */
 .texto-principal {
@@ -267,7 +269,7 @@ footer {
   }
 
   .logo-container img {
-    width: 80px;
+    width: 100px; /* Tamanho maior da logo em telas maiores */
   }
 
   .texto-principal {
