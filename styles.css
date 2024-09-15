@@ -83,7 +83,7 @@ button {
 
 /* Ajuste no tamanho da logo */
 .logo-container img {
-  width: 100px; /* Tamanho padrão da logo */
+  width: 50px; /* Tamanho padrão da logo */
   height: auto;
   margin-right: 10px;
 }
@@ -91,7 +91,7 @@ button {
 /* Ajuste para a logo em telas menores */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 80px; /* Reduz o tamanho da logo para telas menores */
+    width: 50px; /* Reduz o tamanho da logo para telas menores */
   }
 }
 
