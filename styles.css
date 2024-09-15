@@ -184,7 +184,7 @@ footer {
   .container-pesquisa {
     flex-direction: column; /* Coloca input e botão um abaixo do outro */
     width: 100%; /* Faz a pesquisa ocupar a largura total */
-    padding: 0 20px; /* Adiciona um padding lateral para evitar que toque as bordas */
+    padding: 0px; /* Adiciona um padding lateral para evitar que toque as bordas */
   }
 
   .container-pesquisa input, .container-pesquisa button {
