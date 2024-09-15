@@ -75,7 +75,7 @@ button {
 
 /* Ajuste no tamanho da logo */
 .logo-container img {
-  width: 50px; /* Tamanho padrão da logo */
+  width: 100px; /* Tamanho padrão da logo */
   height: auto;
   margin-right: 10px;
 }
@@ -83,7 +83,7 @@ button {
 /* Ajuste para a logo em telas menores */
 @media (max-width: 768px) {
   .logo-container img {
-    width: 50px; /* Reduz o tamanho da logo para telas menores */
+    width: 80px; /* Reduz o tamanho da logo para telas menores */
   }
 }
 
@@ -192,7 +192,7 @@ footer {
 @media (max-width: 768px) {
   .container-pesquisa {
     flex-direction: column; /* Coloca input e botão um abaixo do outro */
-    width: 80%; /* Faz a pesquisa ocupar a largura total */
+    width: 100%; /* Faz a pesquisa ocupar a largura total */
     padding: 0px; /* Adiciona um padding lateral para evitar que toque as bordas */
   }
 
@@ -216,7 +216,7 @@ footer {
 
   /* Ajusta o tamanho dos itens de resultado */
   .item-resultado {
-    width: 80%; /* Ajusta a largura para 90% da tela no mobile */
+    width: 90%; /* Ajusta a largura para 90% da tela no mobile */
     margin: 10px 0; /* Ajusta o espaçamento entre os itens */
   }
 
