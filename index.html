@@ -17,18 +17,24 @@
   </header>
   <main>
     <p class="texto-principal">Somos uma startup de impacto social e conectamos você a profissionais capinadores, garantindo que eles sejam bem remunerados.</p>
-    <input type="text" id="campo-pesquisa" placeholder="Digite o nome do seu bairro">
-    <button onclick="pesquisarBairro()">Encontrar meu capinador(a)</button>
+    
+    <!-- Contêiner para a barra de pesquisa e o botão lado a lado -->
+    <div class="container-pesquisa">
+      <input type="text" id="campo-pesquisa" placeholder="Digite o nome do seu bairro">
+      <button onclick="pesquisarBairro()">Encontrar meu capinador(a)</button>
+    </div>
   </main>
+  
   <!-- Seção de resultados da pesquisa -->
   <div class="minha-classe" id="resultados-pesquisa">
-    <p class="aviso-erro">Você não digitou um bairro</p>
+ <!-- #region -->
   </div>
-  <div><p class="aviso-sem-capinadores">Bairro sem capinadores cadastrados</p></div>
+<!-- #region -->  
   <footer>
     <p>2023 - Seu Quintal Limpo - Todos os direitos reservados</p>
     <p>Entre em contato pelo email: seuquintallimp@gmail.com</p>
   </footer>
+  
   <script src="dados.js"></script>
   <script src="app.js"></script>
 </body>
